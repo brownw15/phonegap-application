@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Crawford Health and Counseling Services</title> 
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="headcontain">
+                <h1 class="animated fadeInDown"><span id = "w1">Crawford Health & Counseling Services</span></h1>
+                <!-- <nav class="topnav"> 
+                    <ul>
+                            <li><a href="index.html"><img src="css/images/home.svg" alt="Start Over"></a></li>
+                        <li><a href="ecom.html">
+                                <img src="css/images/ecom.svg" alt="Digtal Commerce">   
+                        </a></li>
+                        <li><a href="webapp.html"> <img src="css/images/webapp.svg" alt="Web Application Development"></a></li>
+                        <li><a href="im.html"><img src="css/images/im.svg "alt="Interactive Media"></a></li>
+                        <li><a href="massmedia.html"><img src="css/images/massmedia.svg" alt="Digital Mass Media"></a></li>  
+                    </ul>
+                </nav> -->
+            </div>
+        </header>
+        <main>
+            <section class="#"> <p><strong> Students can come here for assistance: What do you need help with? </strong> </section>
+            <ul class="cards">         
+                <li class="cards_item animated fadeInRight delay-1s">
+                    <div class="card">
+                        <div class="card_image">
+                            <svg class="icon">
+                                <use xlink:href="#development" />
+                            </svg>
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_heading">Freshman Web Dev Student</h3>
+                            <p> This is standard among the four tracks, this is where you learn to learn! 
+                            </p>
+                            <p>These are the fundamentals of computing and design.</p>
+                        </div>
+                        <section id="contentFS" style="display:none; padding:1rem; margin:0;"> </section>
+                        <button onclick="trackToggle1()"> <p> Show Coursework</p></button>
+                    </div>
+                </li>
+
+                <li class="cards_item animated fadeInLeft delay-2s">
+                    <div class="card">
+                        <div class="card_image">
+                            <svg class="icon">
+                                <use xlink:href="#bug" />
+                            </svg>
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_heading">Sophomore Web Dev Student
+                            </h3>
+                            <p>Sophomore students focus on the principles of Web Design & Computing History.</p>
+                        </div>
+                        <section id="contentSS" style="display:none; padding:1rem; margin:0;">
+                            </section> 
+                            <button onclick="trackToggle2()"> <p> Show Coursework</p></button>
+                    </div>
+                </li>
+
+                <li class="cards_item animated fadeInRight delay-2s">
+                    <div class="card">
+                        <div class="card_image">
+                            <svg class="icon">
+                                <use xlink:href="#code" />
+                            </svg>
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_heading">Junior Web Dev Student</h3>
+                            <p> Juniors are tasked with learning concepts behind complex data structures, programming languages and data management. </p>
+                        </div>
+                        <section id="contentJR" style="display:none; padding:1rem; margin:0;">
+                            </section>
+                            <button onclick="trackToggle3()"> <p> Show Coursework</p></button>
+                    </div>
+                </li>
+
+                <li class="cards_item animated fadeInLeft delay-1s">
+                    <div class="card">
+                        <div class="card_image">
+                            <svg class="icon">
+                                <use xlink:href="#web-development" />
+                            </svg>
+                        </div>
+                        <div class="card_content animated fadeInDownBig delay-.5s">
+                            <h3 class="card_heading">Senior Web Dev Student</h3>
+                            <p> Strong skills in Web Development, Debugging, and program development in multiple enviroments and languages is what you'll bring to the table as you work on your capstone project with members of different careers.</p>
+                        </div>
+                        <section id="contentSR" style="display:none;">
+                            </section>
+                            <button onclick="trackToggle4()"> <p> Show Coursework</p></button>
+                    </div>
+                </li>
+            </ul> 
+        </main>
+        <script src="#.js"></script>
+    </body>    
+</html>
