@@ -9,24 +9,42 @@
       <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
       <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
       <link rel="stylesheet" type="text/css" href="css/index.css" />
-      <title>Hello World</title>
+      <title>Crawford Health & Counseling Services</title>
   </head>
-
   <body>
-      <div class="app">
-        <a href="#" onclick="#"> ###</a>
-        <div id="deviceready" class="blink">
-          <p class="event listening">Connecting to Device</p>
-          <button class="event received"> <p>Get Started</p> </button>
+    <div class="app">
+      <h1>Crawford Health & Counseling Services</h1>
+    </div>
+    <div class="wrapper">
+      <div class="card">
+        <h3 class="card-title">Counseling Services</h3>
+          <p class="card-content">Counseling Services will provide quality mental health service to enhance the overall mental health of Winthrop University students along cognitive, emotional, personal, and interpersonal dimensions.</p>
+          <button class="card-btn">READ MORE</button>
         </div>
-        <div>
+
+        <div class="card">
+          <h3 class="card-title">Health Services</h3>
+          <p class="card-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+          <button class="card-btn">READ MORE</button>
         </div>
+
+        <div class="card">
+          <h3 class="card-title">Office of Victim Assistance</h3>
+          <p class="card-content">The Office of Victims Assistance is committed to providing quality services and advocacy to victims and survivors of sexual assault, stalking, and domestic and dating violence through a concentrated community response.</p>
+          <form> 
+            <button formaction="form.html" class="card-btn">Get Started</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Wellness Services</h3>
+          <p class="card-content">Wellness Services provides a collaborative, evidence-based approach to individual and community wellness through health promotion, educational programming, and service to the Winthrop community.</p>
+          <button class="card-btn">READ MORE</button>
+        </div>
+
       </div>
       <script type="text/javascript" src="cordova.js"></script>
       <script type="text/javascript" src="js/index.js"></script>
-      <script type="text/javascript">
-          app.initialize();
-      </script>
+      <script type="text/javascript">app.initialize();</script>
   </body>
-
 </html>
