@@ -54,6 +54,7 @@ h1 {
     color: #FFF;
     margin:20px;
     box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
+    border-radius: 10px;
 }
 .card:nth-child(3){
     background: #fa8f03;
@@ -101,4 +102,11 @@ h1 {
 .card:last-child .card-btn:hover{
    color:#673ab7;
     background: #FFF;
+}
+
+.urgent{
+    background-color: red;
+    padding: 10px;
+    margin: auto;
+    float:left;
 }

@@ -62,5 +62,8 @@ $(function(){
         
         $(wrapper).on("click",".remove_field", function(e){ 
             e.preventDefault(); $(this).parent('div').remove(); x--;
-        })
+        });
+        
+        jQuery('#datetimepicker').datetimepicker();
     });
+

@@ -8,19 +8,20 @@
       <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
       <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
       <link rel="stylesheet" type="text/css" href="css/forms.css" />
+      <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
       <title>Crawford Health & Counseling Services</title>
   </head>
-  <body>
+
+  <body id="body1">
     <div class="app">
-        
         <div class="wrapper">
             <div id="wizard">
                 <!-- SECTION 1 -->
                 <h4></h4>
                 <section>
-                    <form class="needs-validation" novalidate>      
+                    <form class="needs-validation" validate>      
                         <div class="form-row"> <input type="text" class="form-control" placeholder="Full Name" required> </div>
                         <div class="form-row"> <input type="text" class="form-control" placeholder="Enrollment Number(WID)"> </div>
                         <div class="form-row"> <input type="text" class="form-control" placeholder="Personal Contact Number"> </div>
@@ -34,14 +35,15 @@
               <!-- SECTION 2 -->
                 <h4></h4>
                 <section>
-                <form class="needs-validation" novalidate>
+                <form class="needs-validation" novalidate formaction="#">
                   <div class="form-row ">
-                    <div class="input_fields_wrap">
-                    <h3>Requested services:</h3>  
-                    <label class="container">Wellness
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                      </label>
+                    <h2>Schedule a <span class=" highlight"> Counseling</span> Appointment</h2>
+                    <label id="datepairExample"> 
+                      <h3>Enter Date & Time</h3> </br>
+                      <input id="datetimepicker" type="text" placeholder="Date & Time" />
+                    </label>
+                    <hr>
+                    <h3>Additional Services:</h3>
                       <label class="container">Office of Victims Assistance
                         <input type="checkbox">
                         <span class="checkmark"></span>
@@ -54,26 +56,18 @@
                         <input type="checkbox">
                         <span class="checkmark"></span>
                       </label> 
-                        </div>
-                <div class="input_fields_wrap">
-                    <input type="text" class="form-control col-10" placeholder="Preferred Appointment Times(M-TR | 8:30am - 4:00pm) ">
-                            <button class=" btn -btn-success add_field_button">+</button>
-                            <div></div>
-                        </div>
-                  </div>
+                </div>
                 </form>
-
                 </section>
 
                  <!-- SECTION 3 -->
                 <h4></h4>
                <section>
                  <form class="needs-validation" novalidate>
-                    <div class="form-row"> <input type="text" class="form-control" placeholder="Small Description of Requests"> </div>
+                    <div class="form-row"> <input type="text" class="form-control" placeholder="Small Description of Requests" style="width: 300px; height:150px;"/> </div>
                 </form>
             </section>
-              
-
+            
               <h4></h4>
                 <section>
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
@@ -87,6 +81,7 @@
     </div>
     </div>
     </div>
+      <script type="text/javascript" src="jquery-datetimepicker\build\jquery.datetimepicker.full.min.js"></script>
       <script type="text/javascript" src="cordova.js"></script>
       <script type="text/javascript" src="js/form.js"></script>
       <script type="text/javascript">app.initialize();</script>
