@@ -4,18 +4,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:rgb(78, 78, 78), 40, 40);
-
-    /*background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, rgb(43, 0, 0)),
-        color-stop(0.51, rgba(255, 255, 255, 0.76))
-    ); */
+    background-color:#D5F1DF;
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
@@ -23,6 +12,7 @@ body {
     margin:0px;
     padding:0px;
     width:100%;
+	
 }
 /* Portrait layout (default) */
 .app {
@@ -55,6 +45,7 @@ h1 {
     margin:20px;
     box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
     border-radius: 10px;
+	font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 }
 .card:nth-child(3){
     background: #fa8f03;

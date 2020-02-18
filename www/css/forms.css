@@ -829,6 +829,10 @@ background-color: #2196F3;
 .urgent{
     background-color:red;
 }
+.lowhire{
+	opacity:50%;
+	font-size:.5em;
+}
 .checkmark:after {
 content: "";
 position: absolute;
